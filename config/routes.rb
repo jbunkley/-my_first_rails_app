@@ -1,4 +1,9 @@
-Rails.application.routes.draw do
-  root 'cars#index'
+    Rails.application.routes.draw do
   resources :cars
-end
+        root 'application#hello'
+
+        get 'static_pages/home'
+
+        get 'static_pages/help'
+
+    end
